@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="input" readonly>
+        </div>
+        <div class="keys">
+            <button onclick="allClear()" class="operator" id="clear">AC</button>
+            <button onclick="backspace()" class="operator" id="backspace">C</button>
+            <button onclick="showDisplay('%')" class="operator" id="modulo">%</button>
+            <button onclick="showDisplay('/')" class="operator" id="divide">/</button>
+            <button onclick="showDisplay('7')" class="number" id="seven">7</button>
+            <button onclick="showDisplay('8')" class="number" id="eight">8</button>
+            <button onclick="showDisplay('9')" class="number" id="nine">9</button>
+            <button onclick="showDisplay('*')" class="operator" id="multiply">*</button>
+            <button onclick="showDisplay('4')" class="number" id="four">4</button>
+            <button onclick="showDisplay('5')" class="number" id="five">5</button>
+            <button onclick="showDisplay('6')" class="number" id="six">6</button>
+            <button onclick="showDisplay('-')" class="operator" id="subtract">-</button>
+            <button onclick="showDisplay('1')" class="number" id="one">1</button>
+            <button onclick="showDisplay('2')" class="number" id="two">2</button>
+            <button onclick="showDisplay('3')" class="number" id="three">3</button>
+            <button onclick="showDisplay('+')" class="operator" id="add">+</button>
+            <button onclick="showDisplay('0')" class="number" id="zero">0</button>
+            <button onclick="showDisplay('.')" class="number" id="decimal">.</button>
+            <button onclick="calculate()" class="operator" id="equals">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
