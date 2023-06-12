@@ -17,8 +17,14 @@ body {
   .calculator {
     align-items: center;
     width: 70%;
-    height: 70%;
+    height: 65%;
     padding: 10%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .calculator {
+    height: 75%;
   }
 }
 
@@ -66,7 +72,7 @@ body {
 @media screen and (max-width: 600px) {
   .keys {
     grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: 35% 35% 35% 35% 35%;
+    grid-template-rows: 30% 30% 30% 30% 30%;
     
   }
 }
@@ -97,3 +103,5 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+
