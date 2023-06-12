@@ -13,7 +13,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-height: 580px) {
   .calculator {
     align-items: center;
     width: 70%;
@@ -30,7 +30,7 @@ body {
     padding: 5% 0;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-height: 580px) {
   #input {
     padding: 8% 0;
   }
