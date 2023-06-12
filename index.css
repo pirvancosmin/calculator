@@ -11,6 +11,15 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+}
+@media screen and (max-width: 580px) {
+  .calculator {
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding: 10%;
+  }
 }
 
 .display {
@@ -19,6 +28,12 @@ body {
 
 #input {
     padding: 5% 0;
+}
+
+@media screen and (max-width: 580px) {
+  #input {
+    padding: 8% 0;
+  }
 }
 
 .display input {
@@ -30,6 +45,9 @@ body {
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
+
+
+
 #equals {
     background-color: rgba(0, 42, 66, 0.788);
     grid-column-end: span 2;
@@ -43,6 +61,14 @@ body {
   grid-column-end: span 5;
   grid-gap: 10px;
   grid-auto-flow: row;
+  
+}
+@media screen and (max-width: 580px) {
+  .keys {
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 35% 35% 35% 35% 35%;
+    
+  }
 }
 
 .keys :active {
