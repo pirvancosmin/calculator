@@ -63,7 +63,7 @@ body {
   grid-auto-flow: row;
   
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-height: 580px) {
   .keys {
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: 35% 35% 35% 35% 35%;
