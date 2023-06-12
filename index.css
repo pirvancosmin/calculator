@@ -13,7 +13,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   
 }
-@media screen and (max-height: 580px) {
+@media screen and (max-width: 800px) {
   .calculator {
     align-items: center;
     width: 70%;
@@ -30,7 +30,7 @@ body {
     padding: 5% 0;
 }
 
-@media screen and (max-height: 580px) {
+@media screen and (max-width: 800px) {
   #input {
     padding: 8% 0;
   }
@@ -63,7 +63,7 @@ body {
   grid-auto-flow: row;
   
 }
-@media screen and (max-height: 580px) {
+@media screen and (max-width: 800px) {
   .keys {
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-rows: 35% 35% 35% 35% 35%;
