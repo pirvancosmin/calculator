@@ -1,3 +1,4 @@
+
 const showDisplay = (value) => {
     let chartsArray = document.getElementById('input').value + value;
     let lastChar = document.getElementById('input').value.charAt(document.getElementById('input').value.length - 1);
@@ -37,3 +38,7 @@ const calculate = () => {
 
     return document.getElementById('input').value = output;
 };
+
+function goBack() {
+    window.location.href = "https://pirvancosmin.netlify.app/";
+}
