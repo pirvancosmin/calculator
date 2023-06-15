@@ -1,12 +1,11 @@
 body {
-  background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
-
 .calculator {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 50%;
+  margin: 5% 20%;
+  max-width: 500px;
+  max-height: 400px;
   background-color: #eeeeee;
   border: 2px solid #ccc;
   padding: 20px;
@@ -14,33 +13,12 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 600px) {
-  .calculator {
-    align-items: center;
-    width: 70%;
-    height: 65%;
-    padding: 10%;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .calculator {
-    height: 75%;
-  }
-}
-
 .display {
   margin-bottom: 8%;
 }
 
 #input {
-  padding: 5% 0;
-}
-
-@media screen and (max-width: 600px) {
-  #input {
-    padding: 8% 1%;
-  }
+    padding: 5% 0;
 }
 
 .display input {
@@ -52,11 +30,16 @@ body {
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-
 #equals {
-  background-color: rgba(0, 42, 66, 0.788);
-  grid-column-end: span 2;
-  grid-row-end: 6;
+    background-color: rgba(0, 42, 66, 0.788);
+    grid-column-end: span 1;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+#clear {
+    grid-column-end: span 2;
+    grid-row-end: 0;
 }
 
 .keys {
@@ -66,24 +49,15 @@ body {
   grid-column-end: span 5;
   grid-gap: 10px;
   grid-auto-flow: row;
-
-}
-
-@media screen and (max-width: 600px) {
-  .keys {
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: 30% 30% 30% 30% 30%;
-
-  }
 }
 
 .keys :active {
-  background-color: rgb(0, 54, 85);
-  box-shadow: 0.5px 0.5px 7px rgba(0, 0, 0, 0.945);
+    background-color: rgb(0, 54, 85);
+    box-shadow: 0.5px 0.5px 7px rgba(0, 0, 0, 0.945);
 }
 
 .number {
-  background-color: #55b4f3;
+  background-color: #3ba7ee;
   color: #fff;
   border: none;
   padding: 10px;
@@ -102,16 +76,4 @@ body {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-}
-.butBack {
-  background-color: rgba(0, 42, 66, 0.788);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
 }
